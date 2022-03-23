@@ -1,12 +1,15 @@
 {
   "name": "active-admin-alpinejs-fixes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Miscellaneous fixes to improve compatibility between AlpineJS and Active Admin",
   "main": "index.js",
   "author": "Guillermo Moreno <gmq@guillermomoreno.cl>",
-  "licenses": [{
-    "type": "MIT",
-    "url" : "http://en.wikipedia.org/wiki/MIT_License"
-  }],
-  "private": false
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://en.wikipedia.org/wiki/MIT_License"
+    }
+  ],
+  "private": false,
+  "dependencies": {}
 }

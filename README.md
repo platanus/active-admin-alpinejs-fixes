@@ -20,8 +20,7 @@ form do |f|
 
     f.input :choices,
       input_html: {
-        'x-model': 'choices',
-        'data-select2-prop': 'choices'
+        'x-model': 'choices'
       }
   end
 end
