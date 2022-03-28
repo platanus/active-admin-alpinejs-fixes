@@ -4,7 +4,7 @@ Since ActiveAdmin uses jQuery and Select2 for its interactive elements, there ma
 
 ## x-model + Select2
 
-Alpine has no idea what Select2 is doing and Select2 has no idea what Alpine is doing. This fix checks for the existence of a custom data attribute to subscribe to the element's Select2 event to update the data variable in Alpine, and then it watches the Alpine variable to update the value of the Select2 element.
+Alpine has no idea what Select2 is doing and Select2 has no idea what Alpine is doing. This fix iterates through all `select` elements with the `x-model` attribute, subscribing itself to Select2 to update the data variable in Alpine, and then it watches the Alpine variable to update the value of the Select2 element.
 
 ```javascript
 import { select2 } from 'active-admin-alpinejs-fixes';
@@ -54,7 +54,7 @@ form do |f|
         'x-model': "choices[#{i - 1}].name"
       }
 
-      # Uncheck all checkboxes except the one being clicked.
+      # Example: Uncheck all checkboxes except the one being clicked.
       co.input :main_choice, as: :boolean, input_html: {
         'x-model': "choices[#{i - 1}].main_choice",
         'x-on:change': "(e) => {
