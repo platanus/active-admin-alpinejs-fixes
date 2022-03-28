@@ -1,6 +1,6 @@
 {
   "name": "active-admin-alpinejs-fixes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Miscellaneous fixes to improve compatibility between AlpineJS and Active Admin",
   "main": "index.js",
   "author": "Guillermo Moreno <gmq@guillermomoreno.cl>",
